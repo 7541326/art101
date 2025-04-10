@@ -19,6 +19,7 @@ h1 {
   /* letter-spacing: 5px; */
   /* word-spacing: 5px; */
   font-size: 200%;
+  text-align: center;
 }
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
@@ -36,7 +37,10 @@ h1 {
   margin-bottom: 10px;
   border: solid 0px #888;
   border-radius: 5px;
-  background-color: rgb(254, 245, 245);
+  background-color: #ffefef;
+  overflow: auto;
 }
 
-/* #output {} */
+.resultimg {
+  width: 100%;
+}
