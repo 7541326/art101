@@ -3,7 +3,7 @@
 
 body {
   background-color: var(--main-bg);
-  background-image: url("/img/bg.png");
+  background-image: url("../img/bg.png");
   /* background-repeat: no-repeat; */
   /* background-position: right -330px top -100px; */
 }
