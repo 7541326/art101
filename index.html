@@ -2,7 +2,8 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>laura's homepage</title>
+	<title>zhou's homepage</title>
+	<link rel="icon" href="img/pcr-hisui-zorua-icon.png">
 
 	<!-- Use UTF character set, a good idea with any webpage -->
 	<meta charset="UTF-8" />
@@ -13,27 +14,73 @@
 	<link rel="stylesheet" type="text/css" href="css/site.css">
 	<!-- Lab-specifc CSS file for any special styling of this particular page -->
 	<link rel="stylesheet" type="text/css" href="css/homepage.css">
-	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
 
-	<!-- <script type="text/javascript" src="./js/lab.js" DEFER></script> -->
+	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
+	<script type="text/javascript" src="./js/jquery-3.7.1.min.js" DEFER></script>
+	<script type="text/javascript" src="./js/site.js" DEFER></script>
 </head>
 <body>
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
-		<h1>laura's homepage</h1>
 		<nav id="links">
-			<ul>
-				<li><a href="lab2/index.html">lab 2</a></li>
-				<li><a href="lab3/index.html">lab 3</a></li>
-			</ul>
+			
 		</nav>
+		<img id="hzorua3" src="./img/pgl-hisui-zorua.png" alt="image of hisuian zorua">
+		<div class="blank">
+			<!-- <p>|||||||||||||||||||||||||||||||||||||||||||||||||||||</p> -->
+		</div>
 		<section>
+			<h1>
+				zhou's homepage
+				<img src="img/m-zorua.png" id="zorua2" alt="image of a zorua and a hisuian zorua cuddling">
+			</h1>
 			<div class="minor-section">
 					<!-- Note that all filenames use lowercase and no spaces -->
-					<!-- <img class="sideimgR" src="./img/image.jpg"> -->
-					<h2>About Me</h2>
-					<p>Tell us about yourself. Add photos. Customize this. Go crazy.</p>
+					<img class="sideimgL" src="./img/image.jpg" alt="picture of meeeeeeeee">
+					<h2>about me</h2>
+					<p>hi, i'm zhou, majoring in art & games: design and playable media. my hobbies include: sleeping in, staring idly at the wall, & drawing. my current favorite games are: 1000xresist, signalis, & hollow knight. recently i've been playing: pokemon legends arceus, infinity nikki, & wobbledogs.</p>
+					<img id="hzorua1" src="./img/570-hisuianform.png" alt="image of hisuian zorua's sprite in the game pokemon cafe remix">
+					<p>my to do list for this place:<br>
+						1) remember how css grids work<br>
+						2) unspaghetti my css (unlikely)<br>
+						3) links on every page DONE!, fonts<br>
+					</p>
 			</div>
+			
+			<div class="minor-section">
+				<h2 id="verycute">
+					<span class="block-line"><span><span style="color:#ff6b00">b</span><span style="color:#008cff">a</span><span style="color:#ff0023">n</span><span style="color:#00ff54">a</span><span style="color:#00ff1c">n</span><span style="color:#0081ff">a&nbsp;</span></span><span><span style="color:#00ff1b">s</span><span style="color:#13ff00">l</span><span style="color:#ff00d1">u</span><span style="color:#00dbff">g</span><span style="color:#ff2400">s&nbsp;</span></span><span><span style="color:#00ffea">v</span><span style="color:#4dff00">e</span><span style="color:#3700ff">r</span><span style="color:#00ffd7">y&nbsp;</span></span><span><span style="color:#ffca00">c</span><span style="color:#00ff30">u</span><span style="color:#00fffd">t</span><span style="color:#7000ff">e</span></span></span>
+				</h2>
+				<!-- rainbow text generator
+				https://www.html-code-generator.com/html/rainbow-text-generator -->
+				<div class="imgs">
+					<img src="./img/slugs/slug8.png" alt="image of a banana slug">
+					<img src="./img/slugs/slug7.png" alt="image of a banana slug">
+					<img src="./img/slugs/slug6.png" alt="image of a banana slug">
+					<img src="./img/slugs/slug5.png" alt="image of a banana slug">
+					<img src="./img/slugs/slug4.png" alt="image of a banana slug">
+					<img src="./img/slugs/slug3.png" alt="image of a banana slug">
+					<img src="./img/slugs/slug9.png" alt="image of a banana slug">
+					<img src="./img/slugs/slug2.png" alt="image of a banana slug">
+					<img src="./img/slugs/slug1.png" alt="image of a banana slug">
+					<img src="./img/slugs/slug10.png" alt="image of a banana slug">
+				</div>
+			</div>
+
+			<div class="minor-section">
+				<!-- Note that all filenames use lowercase and no spaces -->
+				<img class="sideimgR" src="./img/pla-base-camp.png" alt="image of a base camp from pokemon legends arceus">
+				<h2>image sources</h2> 
+				<ul>
+					<li>background - pokemon merch art</li>
+					<li>icon - pokemon cafe remix</li>
+					<li>other images - pokemon merch art</li>
+					<li>other images - pokemon cafe remix</li>
+					<li>other images - pokemon legends arceus</li>
+					<li>other images - pokemon global link</li>
+				</ul>
+			</div>
+
 		</section>
 	</main>
 </body>

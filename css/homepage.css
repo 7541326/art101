@@ -1,6 +1,162 @@
 /* this css file will only style the homepage of our site */
+/* @import './site.css'; */
+
+body {
+  background-color: var(--main-bg);
+  background-image: url("/img/bg.png");
+  /* background-repeat: no-repeat; */
+  /* background-position: right -330px top -100px; */
+}
+
+#content {
+  background-color: var(--content-bg);
+}
+
+@media screen and (min-width: 955px) {
+  body {
+    padding-left: 100px;
+  }
+
+  h1 {
+    margin-left: -100px;
+  }
+
+  /* div.blank p {
+    margin: auto;
+    writing-mode:vertical-lr;
+    text-orientation:upright;
+    overflow: hidden;
+    font-weight: bold;
+    color:var(--light-accent);
+  } */
+
+  .sideimgL {
+    border: solid 3px #ffffff;
+    transform: rotate(-2deg);
+  }
+
+  #zorua2 {
+    position: absolute;
+    top: 15px;
+    height: 70px;
+    pointer-events: none;
+  }
+
+  #hzorua3 {
+    position: absolute;
+    transform: scaleX(-1);
+    bottom: 0px;
+    left: -140px;
+    height: 100px;
+  }
+
+  #hzorua3:hover {
+    bottom: 10px;
+  }
+
+  .imgs img {
+    margin: 2px;
+    width: 110px;
+    border-radius: 5px;
+  }
+
+  .imgs img:active {
+    position: absolute;
+    order: 1;
+    width: 90%;
+    top: 100px;
+    border: solid 2px #ff727200;
+  }
+}
+
+@media screen and (max-width: 954px) {
+  h1 {
+    margin: -10px 5px 10px 5px;
+  }
+
+  #zorua2, #hzorua3 {
+    display: none;
+  }
+
+  .imgs img {
+    margin: 3px;
+    width: 15%;
+    border-radius: 5px;
+  }
+
+  .imgs img:active {
+    position: absolute;
+    order: 1;
+    width: 90%;
+    bottom: 0;
+    border: solid 2px #ff727200;
+  }
+}
+
+h2 {
+  margin: 5px 5px -5px 5px;
+}
+
+h2#verycute {
+  margin: -5px 5px 10px 5px;
+  font-family: "comic sans", cursive;
+  letter-spacing: 5px;
+  text-align: center;
+  text-shadow: 2px 0 #111, -2px 0 #111, 0 2px #111, 0 -2px #111,
+             1px 1px #111, -1px -1px #111, 1px -1px #111, -1px 1px #111;
+}
+/* text border (text-shadow) from 
+https://stackoverflow.com/questions/13426875/text-border-using-css-border-around-text */
+
+.sideimgL, .sideimgR {
+  max-width: 25%;
+  border-radius: 5px;
+  min-width: 220px;
+}
+
+.sideimgL {
+  margin-right: 15px;
+  float:left;
+}
 
 .sideimgR {
-  max-width: 50%;
+  margin-left: 15px;
   float:right;
+}
+
+.imgs {
+  margin: 5px auto auto auto;
+  display: flex;
+  width: 100%;
+  align-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imgs img {
+  border: solid 2px #ff727200;
+}
+
+.imgs img:hover {
+  border: solid 2px #ff7272;
+}
+
+/* a {
+  color:#e71c1c;
+}
+
+a:hover, a:active {
+  color:#ff7272;
+} */
+
+ul {
+  list-style:none;
+}
+
+#hzorua1 {
+  position: relative;
+  width: 10%;
+  min-width: 80px;
+  float: right;
+  transform: scaleX(-1);
 }

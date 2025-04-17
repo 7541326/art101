@@ -17,5 +17,14 @@ function main() {
   // the code that makes everything happen
 }
 
+
+$(document).ready(function() {
+  $('nav#links').load('../navlinks.html');
+  console.log("Printed");
+});
+// html load from https://www.geeksforgeeks.org/how-to-load-external-html-file-using-jquery/
+
+
+
 // let's get this party started
 main();

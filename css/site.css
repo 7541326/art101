@@ -1,12 +1,98 @@
+:root {
+  --main-bg: #f0eff0;
+  --content-bg: #ffffff98;
+
+  /* these are changed on the individual page css */
+  --a-color: #e71c1c;
+  --ahover-color: #ff7272;
+  --sec-bg: #ffefef;
+  --linkshover-bg: #fffefe;
+  --linkshover-border: #ff7272;
+  --linksactive-color: #4c0000;
+  --linksactive-bg: #ff7272;
+}
+
+@media screen and (min-width: 955px) {
+  body {
+    padding-left: 100px;
+  }
+
+  #content {
+    display: flex;
+    position: relative;
+  }
+
+  div.blank {
+    width: 70px;
+    margin-left: 5px;
+    border-left: dashed 4px var(--sec-bg);
+  }
+
+  nav#links {
+    width: 150px;
+    position: absolute;
+    left: -195px;
+  }
+
+  ul.links li {
+    transform: rotate(3deg);
+    margin: 5px;
+    width: 150px;
+  }
+
+  ul.links li:hover {
+    transform: rotate(0deg);
+    translate: -15px;
+  }
+}
+
+@media screen and (max-width: 954px) {
+  nav#links {
+    display: flex;
+    width: 100%;
+    align-content:stretch;
+    margin-left: -20px;
+  }
+
+  ul.links li {
+    display: inline-block;
+  }
+
+  div.blank {
+    display: none;
+  }
+}
+
+ul.links li {
+  list-style: none;
+  padding: 5px 10px;
+  border: dashed 2px #ff676700;
+  border-radius: 5px;
+  overflow: auto;
+  background-color: var(--sec-bg);
+}
+
+ul.links li:hover {
+  background-color: var(--linkshover-bg);
+  border: solid 2px var(--linkshover-border);
+}
+
+ul.links li:active {
+  color: var(--linksactive-color);
+  background-color: var(--linksactive-bg);
+}
+
+
 /* we can use a single css file to style all the files in our wwebsite */
 
 /* you can pick your own background colors, text colors, and fonts */
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
-  background-color: #f5f0f0;
+  background-color: var(--main-bg);
   max-width: 700px;
-  margin: 5px auto;
+  margin: 30px auto;
+  /* font-family: sans-serif; */
 }
 
 /* we can have rules apply to multiple elements at the same time with commas */
@@ -26,18 +112,18 @@ h1 {
 #content {
   margin: 10px;
   padding: 10px;
-  border: solid 0px #888;
+  border: solid 0px;
   border-radius: 5px;
-  background-color: #eed8d8;
+  background-color: var(--content-bg);
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-  padding: 10px;
+  padding: 15px;
   margin-bottom: 10px;
-  border: solid 0px #888;
+  border: solid 0px;
   border-radius: 5px;
-  background-color: #ffefef;
+  background-color: var(--sec-bg);
   overflow: auto;
 }
 
@@ -46,9 +132,11 @@ h1 {
 }
 
 a {
-  color:#cd0606;
+  color: var(--a-color);
+  font-weight: bold;
+  text-decoration: none;
 }
 
 a:hover, a:active {
-  color:#930909;
+  color: var(--ahover-color);
 }
