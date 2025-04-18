@@ -17,5 +17,10 @@ function main() {
   // the code that makes everything happen
 }
 
+$(document).ready(function() {
+  $('nav#links').load('../navlinks.html');
+  console.log("Printed");
+});
+
 // let's get this party started
 main();

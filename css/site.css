@@ -2,7 +2,6 @@
   --main-bg: #f0eff0;
   --content-bg: #ffffff98;
 
-  /* these are changed on the individual page css */
   --a-color: #e71c1c;
   --ahover-color: #ff7272;
   --sec-bg: #ffefef;
@@ -82,11 +81,6 @@ ul.links li:active {
   background-color: var(--linksactive-bg);
 }
 
-
-/* we can use a single css file to style all the files in our wwebsite */
-
-/* you can pick your own background colors, text colors, and fonts */
-
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
   background-color: var(--main-bg);
@@ -96,7 +90,7 @@ body {
 }
 
 /* we can have rules apply to multiple elements at the same time with commas */
-h1,h2,h3 {
+h1,h2,h3, body {
   font-family: sans-serif;
 }
 
