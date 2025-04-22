@@ -135,3 +135,8 @@ a {
 a:hover, a:active {
   color: var(--ahover-color);
 }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
