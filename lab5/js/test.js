@@ -1,3 +1,7 @@
+// test.js - Using writeln, I guess
+// Author: Meeee
+// Date: April 2025
+
 // Constants
 let make = "Lexus";
 let model = "RX 450H";

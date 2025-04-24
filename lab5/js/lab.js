@@ -1,6 +1,6 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// lab.js - General site stuff. Loading links and the like
+// Author: Meeee
+// Date: April 2025
 
 // Constants
 // Constants
