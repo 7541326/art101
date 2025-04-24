@@ -11,9 +11,9 @@
 // let age = 2025-year;
 // let ownIt = false;
 
-// function main() {
-//   console.log("Main function started.");
-//   // the code that makes everything happen
+function main() {
+  console.log("Main function started.");
+  // the code that makes everything happen
 //   document.getElementById('output').innerHTML = `<br>
 //     Make: ${make}<br>
 //     Model: ${model}<br>
@@ -21,7 +21,7 @@
 //     Year: ${year}<br>
 //     Age: ${age}<br>
 //   `;
-// }
+}
 
 // on document ready, run function
 $(document).ready(function() {
