@@ -7,9 +7,7 @@
   --ahover-color: #a2d0ad;
   --sec-bg: #f8fffa;
   --linkshover-bg: #fefffe;
-  --linkshover-border: #72ff82;
   --linksactive-color: #004c05;
-  --linksactive-bg: #72ff80;
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */

@@ -6,9 +6,7 @@
   --ahover-color: #ff7272;
   --sec-bg: #ffefef;
   --linkshover-bg: #fffefe;
-  --linkshover-border: #ff7272;
   --linksactive-color: #4c0000;
-  --linksactive-bg: #ff7272;
 }
 
 @media screen and (min-width: 955px) {
@@ -74,12 +72,12 @@ ul.links li {
 
 ul.links li:hover {
   background-color: var(--linkshover-bg);
-  border: solid 2px var(--linkshover-border);
+  border: solid 2px var(--ahover-color);
 }
 
 ul.links li:active {
   color: var(--linksactive-color);
-  background-color: var(--linksactive-bg);
+  background-color: var(--ahover-color);
 }
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
