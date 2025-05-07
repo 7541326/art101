@@ -1,0 +1,22 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+:root {
+  --main-bg: #5e777a;
+  --content-bg: #f4fcfe;
+
+  --a-color: #08a2c9;
+  --ahover-color: #72ffff;
+  --sec-bg: #ddf7fb;
+  --linkshover-bg: #fefeff;
+  --linksactive-color: #00204c;
+}
+
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+/* pre {
+  background-color: var(--content-bg);
+} */
