@@ -1,0 +1,50 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+:root {
+  --main-bg: #ffaf76;
+  --content-bg: #fef6f4;
+
+  --a-color: #c94f08;
+  --ahover-color: #ffad72;
+  --sec-bg: #fbe7dd;
+  --linkshover-bg: #fffefe;
+  --linksactive-color: #4c1900;
+}
+
+.special {
+  border: dotted 5px #1dbb57;
+  background-color: #f6ffeb;
+}
+
+.special2 {
+  border: dotted 5px #1da1bb;
+  background-color: #ebf8ff;
+}
+
+.special3 {
+  border: dotted 5px #691dbb;
+  background-color: #f2ebff;
+}
+
+button {
+  background-color: var(--content-bg);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+button:hover {
+  background-color: var(--linkshover-bg);
+  color: var(--a-color);
+  cursor: pointer;
+}
+
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+/* pre {
+  background-color: var(--content-bg);
+} */
