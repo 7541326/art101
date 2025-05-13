@@ -62,18 +62,34 @@ $("#make-convo").click(function(){
     <div class="text"><p>[${getNow()}] ${newText}</p></div>`);
 });
 
+// validate input from
+// https://www.geeksforgeeks.org/how-to-validate-an-input-is-alphanumeric-or-not-using-javascript/
+
+function validateFunc(input) {
+    let val = input.trim(); 
+    // let RegEx = /^[a-z0-9]+$/i; 
+    let RegEx = /[\[\]\<\>\{\}]+/g;
+    let Valid = RegEx.test(val);
+    return Valid
+}
+
+
 // reply function
 function sendReply() {
   const replyText = $("#msgTxt").val();
-
+  console.log(validateFunc(replyText));
   // no empty forms
   if (replyText.replaceAll(" ", "") == "") {
     $("#output").prepend(`
       <div class="textError"><p>[${getNow()}] >> invalid input</p></div>`);
     $("#msgTxt").val("");
-    console.log(replyText);
-  }
-  else {
+    console.log("HELP!");
+  } else if (validateFunc(replyText) == true) {
+    $("#output").prepend(`
+      <div class="textError"><p>[${getNow()}] >> invalid input</p></div>`);
+    $("#msgTxt").val("");
+    console.log("HELP!");
+  } else {
     $("#output").prepend(`
       <div class="textReply"><p>[${getNow()}] >> ${replyText}</p></div>`);
     $("#msgTxt").val("");
@@ -86,12 +102,12 @@ function sendReply() {
 $("#msgTxt").keyup(function(event){
   if (event.keyCode == 13) {
     sendReply();
-    console.log("Okay!");
+    // console.log("Okay!");
   }
 });
 $("#sendMsg").click(function(){
   sendReply();
-  console.log("Okay!");
+  // console.log("Okay!");
 });
 
 // clear text
