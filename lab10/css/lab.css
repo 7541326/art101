@@ -50,6 +50,7 @@ input {
   font-size: 14px;
   height: 300px;
   overflow: auto;
+  word-break: break-all;
 }
 
 .textError {

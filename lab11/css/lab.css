@@ -1,0 +1,29 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+:root {
+  --main-bg: #ffe3b9;
+  --content-bg: #fefef4;
+
+  --a-color: #e36200;
+  --ahover-color: #ffbb72;
+  --sec-bg: #fbf3dd;
+  --linkshover-bg: #fffffe;
+  --linksactive-color: #4c2b00;
+}
+
+/* pre {
+  background-color: var(--content-bg);
+} */
+
+button {
+  color: var(--text-color);
+  background-color: var(--content-bg);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+button:hover {
+  background-color: var(--linkshover-bg);
+  color: var(--a-color);
+  cursor: pointer;
+}
