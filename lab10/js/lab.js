@@ -78,12 +78,7 @@ function sendReply() {
   const replyText = $("#msgTxt").val();
   console.log(validateFunc(replyText));
   // no empty forms
-  if (replyText.replaceAll(" ", "") == "") {
-    $("#output").prepend(`
-      <div class="textError"><p>[${getNow()}] >> invalid input</p></div>`);
-    $("#msgTxt").val("");
-    console.log("HELP!");
-  } else if (validateFunc(replyText) == true) {
+  if (replyText.replaceAll(" ", "") == "" || validateFunc(replyText) == true) {
     $("#output").prepend(`
       <div class="textError"><p>[${getNow()}] >> invalid input</p></div>`);
     $("#msgTxt").val("");
