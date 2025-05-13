@@ -1,0 +1,77 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+:root {
+  --main-bg: #1c1616;
+  --content-bg: #1f1f1f;
+
+  --a-color: #ffffff;
+  --ahover-color: #ff7272;
+  --sec-bg: #2b2b2b;
+  --linkshover-bg: #541d1d;
+  --linksactive-color: #ff0000;
+  
+  --text-color: #f7ebeb;
+}
+
+html {
+  color: var(--text-color);
+}
+
+button {
+  color: var(--text-color);
+  background-color: var(--content-bg);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+button:hover {
+  background-color: var(--linkshover-bg);
+  color: var(--a-color);
+  cursor: pointer;
+}
+
+#flexes {
+  display: flex;
+  justify-content: space-between;
+}
+
+#msgSpacer {
+  width: 5%;
+}
+
+input {
+  width: 70%;
+}
+
+#output {
+  background-color: #000;
+  padding: 5px;
+  font-family: monospace;
+  font-size: 14px;
+  height: 300px;
+  overflow: auto;
+}
+
+.textError {
+  color: #ff0000;
+}
+
+#srcLink {
+  background-color: #000;
+  margin-top: 0px;
+  padding: 5px;
+  font-family: monospace;
+  text-align: right;
+}
+#srcLink>a {
+  font-weight: normal;
+}
+
+/* .text:nth-child(2n) {
+  text-align: right;
+} */
+
+
+/* pre {
+  background-color: var(--content-bg);
+} */

@@ -10,13 +10,6 @@
   --linksactive-color: #3c004c;
 } */
 
-
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-.minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-
 /* pre {
   background-color: var(--content-bg);
 } */
