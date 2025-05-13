@@ -64,7 +64,7 @@ $("#make-convo").click(function(){
 
 // validate input from
 // https://www.geeksforgeeks.org/how-to-validate-an-input-is-alphanumeric-or-not-using-javascript/
-
+// and https://stackoverflow.com/questions/3812055/how-to-remove-square-brackets-in-string-using-regex
 function validateFunc(input) {
     let val = input.trim(); 
     // let RegEx = /^[a-z0-9]+$/i; 
@@ -72,7 +72,6 @@ function validateFunc(input) {
     let Valid = RegEx.test(val);
     return Valid
 }
-
 
 // reply function
 function sendReply() {
