@@ -1,21 +1,30 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 :root {
-  --main-bg: #ffe3b9;
-  --content-bg: #fefef4;
+  --main-bg: #30324f;
+  --content-bg: #cfcade;
 
-  --a-color: #e36200;
-  --ahover-color: #ffbb72;
-  --sec-bg: #fbf3dd;
-  --linkshover-bg: #fffffe;
-  --linksactive-color: #4c2b00;
+  --a-color: #20064f;
+  --ahover-color: #7280ff;
+  --sec-bg: #eeeff0;
+  --linkshover-bg: #fefeff;
+  --linksactive-color: #00134c;
+
+  /* other stuff just for this lab(?) */
+  --tert-bg: #fbfdff;
+  --font-color: #000000;
 }
 
 /* pre {
   background-color: var(--content-bg);
 } */
 
+body {
+  color: var(--font-color);
+}
+
+
 button {
-  color: var(--text-color);
+  color: var(--font-color);
   background-color: var(--content-bg);
   border: none;
   border-radius: 5px;
@@ -26,4 +35,15 @@ button:hover {
   background-color: var(--linkshover-bg);
   color: var(--a-color);
   cursor: pointer;
+}
+
+.nameStyle {
+  background-color: var(--tert-bg);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.centerStuff {
+  text-align: center;
 }
