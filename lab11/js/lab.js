@@ -12,17 +12,27 @@ function sortStr(input) {
 
 // shuffle string func
 // from https://stackoverflow.com/questions/3943772/how-do-i-shuffle-the-characters-in-a-string-in-javascript
+// comments are my best attempt to understand the code
 function shuffleStr(input) {
-    var a = input.split(""),
-        n = a.length;
+  // creates an array from the string
+  var a = input.split(""),
+    // gets the length of the array as a variable
+    n = a.length;
 
-    for(var i = n - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var tmp = a[i];
-        a[i] = a[j];
-        a[j] = tmp;
-    }
-    return a.join("");
+  // iterates through the array, i being the position in the array
+  for(var i = n - 1; i > 0; i--) {
+    // creates a random number that falls within the array length
+    var j = Math.floor(Math.random() * (i + 1));
+    // temporarily reassigns the current letter to a placeholder variable
+    var tmp = a[i];
+    // moves a random letter to the current position
+    a[i] = a[j];
+    // moves the former letter to the random letter's position
+    a[j] = tmp;
+  }
+
+  // returns the shuffled array as a string
+  return a.join("");
 }
 
 
@@ -111,7 +121,7 @@ function getRandomColor() {
 
 // randomize all colors
 function randColors(){
-  console.log(getRandomColor());
+  console.log("Randomized:)");
   // https://stackoverflow.com/questions/40572157/change-css-root-variable-with-jquery-or-javascript
   document.documentElement.style.setProperty('--main-bg', getRandomColor());
   document.documentElement.style.setProperty('--content-bg', getRandomColor());
