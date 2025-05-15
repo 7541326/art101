@@ -122,7 +122,6 @@ function randColors(){
   document.documentElement.style.setProperty('--linkshover-bg', getRandomColor());
   document.documentElement.style.setProperty('--linksactive-color', getRandomColor());
 
-
   document.documentElement.style.setProperty('--tert-bg', getRandomColor());
   document.documentElement.style.setProperty('--font-color', getRandomColor());
 };
@@ -151,7 +150,6 @@ $("#resetColors").click(function(){
   document.documentElement.style.setProperty('--sec-bg', "#eeeff0");
   document.documentElement.style.setProperty('--linkshover-bg', "#fefeff");
   document.documentElement.style.setProperty('--linksactive-color', "#00134c");
-
 
   document.documentElement.style.setProperty('--tert-bg', "#fbfdff");
   document.documentElement.style.setProperty('--font-color', "#000000");
