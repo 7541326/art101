@@ -1,0 +1,80 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+:root {
+  --main-bg: #272727;
+  --content-bg: #efefef;
+
+  --a-color: #5b5b5b;
+  --ahover-color: #999999;
+  --sec-bg: #e4e4e4;
+  --linkshover-bg: #fefffe;
+  --linksactive-color: #ffffff;
+
+  --header-color: #ffffff;
+}
+
+#source {
+  display: none;
+  font-family: monospace;
+  text-align: right;
+}
+
+#output {
+  position: relative;
+  display: none;
+  font-family: monospace;
+  font-size: 15px;
+  background-color: #000000;
+  padding: 20px;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+#output h3 {
+  font-family: monospace;
+  font-size: 25px;
+  margin: 15px;
+  margin-top: 0;
+  color: var(--header-color);
+  text-align: center;
+}
+
+.centerBtn {
+  text-align: center;
+}
+
+.hColor {
+  color: var(--header-color);
+}
+
+#bustImg {
+  height: 100px;
+}
+
+#logoImg {
+  width: 250px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  transform: rotate(-15deg);
+  filter: opacity(20%);
+  pointer-events: none;
+}
+
+/* pre {
+  background-color: var(--content-bg);
+} */
+
+
+button {
+  color: var(--a-color);
+  background-color: var(--content-bg);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+button:hover {
+  background-color: var(--linkshover-bg);
+  color: var(--a-color);
+  cursor: pointer;
+}

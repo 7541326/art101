@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- This title is used for tabs and bookmarks -->
+	<title>Lab 12 - Conditionals</title>
+	<link rel="icon" href="../img/pcr-hisui-zorua-icon.png">
+
+	<!-- Use UTF character set, a good idea with any webpage -->
+  	<meta charset="UTF-8" />
+	<!-- Set viewport so page remains consistently scaled w narrow devices -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- Include a sitewide CSS file for consistent styling across the site -->
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<!-- Lab-specifc CSS file for any special styling of this particular page -->
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	
+	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
+	<script type="text/javascript" src="./js/lab.js" DEFER></script>
+</head>
+<body>
+	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
+	<main id="content">
+		<nav id="links">
+			<!-- Put links to other pages (including the homepage) here. -->
+		</nav>
+		<div class="blank">
+			<!-- spacer -->
+		</div>
+		<section>
+			<h1>Lab 12 - Conditionals</h1>
+			<div class="minor-section">
+				<h2>Challenge</h2>
+				<p>The challenge of this lab was to create a text field that would take user input, and then depending on how long the given string is, return one of several outcomes.</p>
+			</div>
+
+			<div class="minor-section">
+				<h2>Problems</h2>
+				<p>I had a good amount of problems that came up when moving things around in my script, largely because I'm very bad at keeping track of what bracket is for what, even with the built-in color guide where the corresponding brackets match. I also probably could have made my code a lot cleaner than it is right now (it's bad).</p>
+			</div>
+
+			<div class="minor-section">
+				<h2>Reflection</h2>
+				<p>I had fun with this assignment, refactoring aside (I started adding things at the same time as trying to simplifiy some of my code, which means my code just ended up getting weirder instead of better). Don't look too hard at my script please, it works (I think??) but it could be better. I also didn't know how I could get the color change to transition smoothly, so it's a bit abrupt.
+			</div>
+
+			<div class="minor-section">
+				<h2>Results</h2>
+				<div id="hideThis">
+					<input type="text" id="input">
+					<button id="submit">Submit</button>
+					<br><br>
+					Type something in the box above and submit to get started!
+				</div>
+				<div id="output">
+				</div>
+				<div id="source">
+					<a href="https://1000xresist.wiki.gg/wiki/1000xRESIST">source</a>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
