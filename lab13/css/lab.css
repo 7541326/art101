@@ -1,0 +1,32 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+:root {
+  --main-bg: #671111;
+  --content-bg: #ffeeee;
+
+  --a-color: #c90808;
+  --ahover-color: #ff7272;
+  --sec-bg: #fbdddd;
+  --linkshover-bg: #fffefe;
+  --linksactive-color: #4c0000;
+}
+
+.centerBtn {
+  text-align: center;
+}
+
+.centerTable {
+  margin: auto;
+}
+
+#output {
+  display: none;
+}
+
+.columns {
+  columns: 3 auto;
+  line-height: 25px;
+}
+
+input[type=text] {
+  width: 250px;
+}
