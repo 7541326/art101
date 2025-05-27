@@ -3,24 +3,30 @@
 // Date: April 2025
 
 // Constants
-// Constants
-// let make = "Lexus";
-// let model = "RX 450H";
-// let color = "White";
-// let year = 2013;
-// let age = 2025-year;
-// let ownIt = false;
+let make = "Lexus";
+let model = "RX 450H";
+let color = "White";
+let year = 2013;
+let age = 2025-year;
+let ownIt = false;
+
+// document.writeln("<br>");
+// document.writeln("Make: " + make + "<br>");
+// document.writeln("Model: " + model + "<br>");
+// document.writeln("Color: " + color + "<br>");
+// document.writeln("Year: " + year + "<br>");
+// document.writeln("Age: " + age + "<br>");
+
 
 function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-//   document.getElementById('output').innerHTML = `<br>
-//     Make: ${make}<br>
-//     Model: ${model}<br>
-//     Color: ${color}<br>
-//     Year: ${year}<br>
-//     Age: ${age}<br>
-//   `;
+  console.log("Main function started."); 
+  $("#output").html(`<br>
+    Make: ${make}<br>
+    Model: ${model}<br>
+    Color: ${color}<br>
+    Year: ${year}<br>
+    Age: ${age}<br>
+  `);
 }
 
 // on document ready, run function

@@ -3,6 +3,26 @@
 // Date: May 2025
 
 // lab stuff
+const rootVars = [
+  "--main-bg",
+  "--content-bg",
+  "--a-color",
+  "--ahover-color",
+  "--sec-bg",
+  "--linkshover-bg",
+  "--linksactive-color",
+  "--header-color",
+];
+const defaultColors = [
+  "#272727",
+  "#efefef",
+  "#5b5b5b",
+  "#999999",
+  "#e4e4e4",
+  "#fefffe",
+  "#ffffff",
+  "#ffffff"
+];
 
 // sort string func
 function sortStr(input) {
@@ -123,17 +143,11 @@ function getRandomColor() {
 function randColors(){
   console.log("Randomized:)");
   // https://stackoverflow.com/questions/40572157/change-css-root-variable-with-jquery-or-javascript
-  document.documentElement.style.setProperty('--main-bg', getRandomColor());
-  document.documentElement.style.setProperty('--content-bg', getRandomColor());
-
-  document.documentElement.style.setProperty('--a-color', getRandomColor());
-  document.documentElement.style.setProperty('--ahover-color', getRandomColor());
-  document.documentElement.style.setProperty('--sec-bg', getRandomColor());
-  document.documentElement.style.setProperty('--linkshover-bg', getRandomColor());
-  document.documentElement.style.setProperty('--linksactive-color', getRandomColor());
-
-  document.documentElement.style.setProperty('--tert-bg', getRandomColor());
-  document.documentElement.style.setProperty('--font-color', getRandomColor());
+  for (i in rootVars) {
+    document.documentElement.style.setProperty(rootVars[i], getRandomColor());
+    console.log(rootVars[i]);
+    console.log(getRandomColor());
+  };
 };
 
 // buttons
@@ -152,17 +166,11 @@ $("#randColorsTimedStop").click(function(){
 
 // reset colors button
 $("#resetColors").click(function(){
-  document.documentElement.style.setProperty('--main-bg', "#30324f");
-  document.documentElement.style.setProperty('--content-bg', "#cfcade");
-
-  document.documentElement.style.setProperty('--a-color', "#20064f");
-  document.documentElement.style.setProperty('--ahover-color', "#7280ff");
-  document.documentElement.style.setProperty('--sec-bg', "#eeeff0");
-  document.documentElement.style.setProperty('--linkshover-bg', "#fefeff");
-  document.documentElement.style.setProperty('--linksactive-color', "#00134c");
-
-  document.documentElement.style.setProperty('--tert-bg', "#fbfdff");
-  document.documentElement.style.setProperty('--font-color', "#000000");
+  for (i in rootVars) {
+    document.documentElement.style.setProperty(rootVars[i], defaultColors[i]);
+    console.log(rootVars[i]);
+    console.log(defaultColors[i]);
+  };
 });
 
 // --------------------------------------------

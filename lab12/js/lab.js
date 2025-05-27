@@ -16,14 +16,15 @@ const colorArray = [
     bust: "./img/watcherimg.png",
     desc: `
       <b>Watchers</b> monitor not only the daily on-goings of life in The Orchard, but they also hold the sacred duty of performing communions and directly witnessing the memories of the ALLMOTHER.`,
-    mainbg: "#010f58",
-    contentbg: "#e2eeff",
-    acolor: "#0868c9",
-    ahovercolor: "#72c2ff",
-    secbg: "#f5feff",
-    linkshoverbg: "#feffff",
-    linksactivecolor: "#000e4c",
-    headercolor: "#00EAFF"
+    colors: [
+      "#010f58",
+      "#e2eeff",
+      "#0868c9",
+      "#72c2ff",
+      "#f5feff",
+      "#feffff",
+      "#000e4c",
+      "#00EAFF"]
   },
   {
     name: "KNOWER",
@@ -31,14 +32,15 @@ const colorArray = [
     bust: "./img/knowerimg.png",
     desc: `
       <b>Knowers</b> tend to the library, archiving the history of the world and ALLMOTHER's teachings, as well as being a scholarly resource on various topics.`,
-    mainbg: "#2e0158",
-    contentbg: "#f0e2ff",
-    acolor: "#5208c9",
-    ahovercolor: "#d772ff",
-    secbg: "#fbf5ff",
-    linkshoverbg: "#fffeff",
-    linksactivecolor: "#35004c",
-    headercolor: "#D158FF"
+    colors: [
+      "#2e0158",
+      "#f0e2ff",
+      "#5208c9",
+      "#d772ff",
+      "#fbf5ff",
+      "#fffeff",
+      "#35004c",
+      "#D158FF"]
   },
   {
     name: "HEALER",
@@ -46,14 +48,15 @@ const colorArray = [
     bust: "./img/healerimg.png",
     desc: `
       <b>Healers</b> take care of general health and wellness of the sisters. They also oversee the cloning chambers, and are responsible for assigning a color-function to each newborn shell.`,
-    mainbg: "#580154",
-    contentbg: "#ffe2fe",
-    acolor: "#c908c9",
-    ahovercolor: "#ff72e0",
-    secbg: "#fff5ff",
-    linkshoverbg: "#fffeff",
-    linksactivecolor: "#3f004c",
-    headercolor: "#FFB3EE"
+    colors: [
+      "#580154",
+      "#ffe2fe",
+      "#c908c9",
+      "#ff72e0",
+      "#fff5ff",
+      "#fffeff",
+      "#3f004c",
+      "#FFB3EE"]
   },
   {
     name: "BANG BANG FIRE",
@@ -61,14 +64,15 @@ const colorArray = [
     bust: "./img/bbfimg.png",
     desc: `
       <b>Bang Bang Fires</b> are the security force that protects The Orchard from Occupant attacks, monitoring for Occupant activity via radar and infrared scans, and conducting training drills.`,
-    mainbg: "#582201",
-    contentbg: "#ffece2",
-    acolor: "#c95c08",
-    ahovercolor: "#ffad72",
-    secbg: "#fff8f5",
-    linkshoverbg: "#fffffe",
-    linksactivecolor: "#4c1900",
-    headercolor: "#FFA900"
+    colors: [
+      "#582201",
+      "#ffece2",
+      "#c95c08",
+      "#ffad72",
+      "#fff8f5",
+      "#fffffe",
+      "#4c1900",
+      "#FFA900"]
   },
   {
     name: "FIXER",
@@ -76,43 +80,55 @@ const colorArray = [
     bust: "./img/fixerimg.png",
     desc: `
       <b>Fixers</b> maintain various systems and repairs across The Orchard. They have access to many back-end areas normally inaccessible to other shells.`,
-    mainbg: "#015811",
-    contentbg: "#e2ffe7",
-    acolor: "#08c91f",
-    ahovercolor: "#72ff9a",
-    secbg: "#f5fff5",
-    linkshoverbg: "#fefffe",
-    linksactivecolor: "#004c03",
-    headercolor: "#6DE75D"
+    colors: [
+      "#015811",
+      "#e2ffe7",
+      "#08c91f",
+      "#72ff9a",
+      "#f5fff5",
+      "#fefffe",
+      "#004c03",
+      "#6DE75D"]
   }
 ];
+const rootVars = [
+  "--main-bg",
+  "--content-bg",
+  "--a-color",
+  "--ahover-color",
+  "--sec-bg",
+  "--linkshover-bg",
+  "--linksactive-color",
+  "--header-color",
+]
+const defaultColors = [
+  "#272727",
+  "#efefef",
+  "#5b5b5b",
+  "#999999",
+  "#e4e4e4",
+  "#fefffe",
+  "#ffffff",
+  "#ffffff"
+]
 
-// function to change colors. probably not the best way to do it 
+// function to change colors
 function changeColors(color) {
-  document.documentElement.style.setProperty('--main-bg', colorArray[color].mainbg);
-  document.documentElement.style.setProperty('--content-bg', colorArray[color].contentbg);
-
-  document.documentElement.style.setProperty('--a-color', colorArray[color].acolor);
-  document.documentElement.style.setProperty('--ahover-color', colorArray[color].ahovercolor);
-  document.documentElement.style.setProperty('--sec-bg', colorArray[color].secbg);
-  document.documentElement.style.setProperty('--linkshover-bg', colorArray[color].linkshoverbg);
-  document.documentElement.style.setProperty('--linksactive-color', colorArray[color].linksactivecolor);
-  document.documentElement.style.setProperty('--header-color', colorArray[color].headercolor);
+  for (i in rootVars) {
+    document.documentElement.style.setProperty(rootVars[i], colorArray[color].colors[i]);
+    console.log(rootVars[i]);
+    console.log(colorArray[color].colors[i]);
+  };
 } 
 
 // fuction to reset colors
-function resetColors(){
-  document.documentElement.style.setProperty('--main-bg', "#272727");
-  document.documentElement.style.setProperty('--content-bg', "#efefef");
-
-  document.documentElement.style.setProperty('--a-color', "#5b5b5b");
-  document.documentElement.style.setProperty('--ahover-color', "#999999");
-  document.documentElement.style.setProperty('--sec-bg', "#e4e4e4");
-  document.documentElement.style.setProperty('--linkshover-bg', "#fefffe");
-  document.documentElement.style.setProperty('--linksactive-color', "#ffffff");
-
-  document.documentElement.style.setProperty('--header-color', "#ffffff");
-};
+function resetColors() {
+  for (i in rootVars) {
+    document.documentElement.style.setProperty(rootVars[i], defaultColors[i]);
+    console.log(rootVars[i]);
+    console.log(defaultColors[i]);
+  };
+}
 
 // grab random phrase
 function randPhrase() {
@@ -226,3 +242,29 @@ $(document).ready(function() {
   $('nav#links').load('../navlinks.html');
   console.log("Printed");
 });
+
+
+// ---------------------------------------------------
+// old code
+
+
+  // document.documentElement.style.setProperty('--main-bg', colorArray[color].mainbg);
+  // document.documentElement.style.setProperty('--content-bg', colorArray[color].contentbg);
+
+  // document.documentElement.style.setProperty('--a-color', colorArray[color].acolor);
+  // document.documentElement.style.setProperty('--ahover-color', colorArray[color].ahovercolor);
+  // document.documentElement.style.setProperty('--sec-bg', colorArray[color].secbg);
+  // document.documentElement.style.setProperty('--linkshover-bg', colorArray[color].linkshoverbg);
+  // document.documentElement.style.setProperty('--linksactive-color', colorArray[color].linksactivecolor);
+  // document.documentElement.style.setProperty('--header-color', colorArray[color].headercolor);
+
+//   document.documentElement.style.setProperty('--main-bg', "#272727");
+//   document.documentElement.style.setProperty('--content-bg', "#efefef");
+
+//   document.documentElement.style.setProperty('--a-color', "#5b5b5b");
+//   document.documentElement.style.setProperty('--ahover-color', "#999999");
+//   document.documentElement.style.setProperty('--sec-bg', "#e4e4e4");
+//   document.documentElement.style.setProperty('--linkshover-bg', "#fefffe");
+//   document.documentElement.style.setProperty('--linksactive-color', "#ffffff");
+
+//   document.documentElement.style.setProperty('--header-color', "#ffffff");

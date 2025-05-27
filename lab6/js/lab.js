@@ -2,12 +2,29 @@
 // Author: Meeee
 // Date: April 2025
 
-// Constants
+// Variables
+let myTransport = ["the bus", "walking", "a car"];
+
+// Object
+let myMainRide = {
+  make: "Lexus",
+  model: "RX 450H",
+  color: "white",
+  year: 2013,
+  age: function() {
+    return 2025 - this.year;
+  }
+};
 
 
 // Functions
 function main() {
   console.log("Main function started.");
+  $("#output").html(`
+    List of transportation methods: ${myTransport.join(', ')} <br>
+    <br>
+    My main ride: <pre>
+    ${JSON.stringify(myMainRide, null, '\t')}</pre>`)
 }
 
 // on document ready, run function

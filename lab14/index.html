@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- This title is used for tabs and bookmarks -->
+	<title>Lab 14 - Debugging Tools & Strategies</title>
+	<link rel="icon" href="../img/pcr-hisui-zorua-icon.png">
+
+	<!-- Use UTF character set, a good idea with any webpage -->
+  	<meta charset="UTF-8" />
+	<!-- Set viewport so page remains consistently scaled w narrow devices -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- Include a sitewide CSS file for consistent styling across the site -->
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<!-- Lab-specifc CSS file for any special styling of this particular page -->
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	
+	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
+	<script type="text/javascript" src="./js/lab.js" DEFER></script>
+</head>
+<body>
+	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
+	<main id="content">
+		<nav id="links">
+			<!-- Put links to other pages (including the homepage) here. -->
+		</nav>
+		<div class="blank">
+			<!-- spacer -->
+		</div>
+		<section>
+			<h1>Lab 14 - Debugging Tools & Strategies</h1>
+			<div class="minor-section">
+					<h2>Challenge</h2>
+					<p>The challenge of this lab was to go back through previous labs and debug any problems that existed in them.</p>
+			</div>
+
+			<div class="minor-section">
+					<h2>Problems</h2>
+					<p>The labs I've done before generally didn't have any problems that I could see with regards to whether or not they worked, because I did my best to make sure what I was submitting for the assignment worked. Therefore, instead of purely debugging, I instead made changes to the code to try to make them better.</p>
+			</div>
+
+			<div class="minor-section">
+					<h2>Reflection</h2>
+					<p>The main thing I'm happy with being able to do is to rework the code from labs 11 and 12, since when doing it I figured there was almost definitely a better way to do it, but I didn't know what/didn't have time. This lab let me go back and change those to be simpler.</p>
+			</div>
+
+			<div class="minor-section">
+					<h2>Debugging</h2>
+					<p>Labs 5 and 6: I replaced the writeln that we used based on the assignment instructions to instead use jQuery's html to write the output.</p>
+					<img class="resultimg" src="img/2025-05-27_12-11-06.png">
+					<img class="resultimg" src="img/2025-05-27_12-13-12.png">
+					<p>Labs 11 and 12: I reworked my code to change the colors to instead use a loop, so it's not a giant chunk of code (which I included a screenshot of at the bottom). Previously, I was manually setting each root var with a color, and since there were ~7-8 vars, resulted in 7-8 lines of code. I added 2 arrays, one for the names of the vars and one for the default var values, which does still add lines to the file, but the actual code is now much nicer to look at.</p>
+					<img class="resultimg" src="img/2025-05-27_12-56-49.png">
+					<img class="resultimg" src="img/2025-05-27_12-57-58.png">
+			</div>
+
+			<!-- <div class="minor-section">
+					<h2>Results</h2>
+					<div id="output">
+					</div>
+			</div> -->
+		</section>
+	</main>
+</body>
+</html>
