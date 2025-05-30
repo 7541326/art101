@@ -173,15 +173,10 @@ const typesArray = [
   "fairy"
 ]
 
-// -----------------------------------------------
-// get random fav
-function randFavNum() {
-  return favArray[Math.floor(Math.random() * favArray.length)];
-}
-
-// get random fav type
-function randFavType() {
-  return favTypes[Math.floor(Math.random() * favTypes.length)];
+// ---------------------------------------------
+// get random of some array
+function randFav(whatArray) {
+  return whatArray[Math.floor(Math.random() * whatArray.length)];
 }
 
 // get random number
@@ -192,10 +187,11 @@ function randNum(min, max) {
 
 // get and check input field
 function checkType(){
+  let typeToCheck = $("#typeInput").val().toLowerCase().replace(" ","");
   // make sure input matches a type in the field
-  if (typesArray.includes($("#typeInput").val().toLowerCase().replace(" ",""))) {
+  if (typesArray.includes(typeToCheck)) {
     // run function for random pokemon in chosen type
-    randPokemon($("#typeInput").val().toLowerCase().replace(" ",""), "type");
+    randPokemon(typeToCheck, "type");
     $("#typeInput").attr("placeholder", "Enter a type");
 
   } else {
@@ -240,7 +236,7 @@ function randPokemon(num, doWhat){
   })
 }
 
-// -----------------------------------------------------
+// -----------------------------------------------
 // buttons
 $("#activate").click(function(){
   randPokemon(randNum(0, 1025),"pokemon");
@@ -250,10 +246,10 @@ $("#activate2").click(function(){
 })
 
 $("#types").click(function(){
-  randPokemon(randFavType(), "type");
+  randPokemon(randFav(favTypes), "type");
 })
 $("#favs").click(function(){
-  randPokemon(randFavNum(), "pokemon");
+  randPokemon(randFav(favArray), "pokemon");
 })
 
 $("#typeButton").click(function(){
@@ -266,7 +262,7 @@ $("#typeInput").keyup(function(event){
 
 
 
-// ------------------------------------------------------
+// ---------------------------------------------
 // links 
 $(document).ready(function() {
   $('nav#links').load('../navlinks.html');

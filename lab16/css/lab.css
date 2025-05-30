@@ -1,0 +1,15 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+:root {
+  --main-bg: #d88288;
+  --content-bg: #ffffff;
+
+  --a-color: #c30606;
+  --ahover-color: #3c40a4;
+  --sec-bg: #ffebeb;
+  --linkshover-bg: #f7f3f3;
+  --linksactive-color: #5a1919;
+}
+
+/* pre {
+  background-color: var(--content-bg);
+} */
