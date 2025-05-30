@@ -38,7 +38,7 @@
 
 			<div class="minor-section">
 					<h2>Problems</h2>
-					<p>This is the first time I've used jQuery's AJAX or anything like it, so it was hard to get a hang of at first, but I was able to figure it out. Mostly, I struggled with getting the correct values from the JSON fetched from the API, especially because the Pokemon API has a ton of info in the JSON it returns. I also encountered a problem when trying to set up the random generator, because in the API, the id ranges are 0-1025, and then 10001-10277 for, I think, variants of the normal pokemon. I struggled a lot trying to merge these two ranges into a single button before giving up and just making them two separate buttons. Also, because the output div is at the bottom of my page, whenever the content of the div is replaced, it scrolls back up a bit, which doesn't seem useful.</p>
+					<p>This is the first time I've used jQuery's AJAX or anything like it, so it was hard to get a hang of at first, but I was able to figure it out. Mostly, I struggled with getting the correct values from the JSON fetched from the API, especially because the Pokemon API has a ton of info in the JSON it returns. I also encountered a problem when trying to set up the random generator, because in the API, the id ranges are 0-1025, and then 10001-10277 for, I think, variants of the normal pokemon. I struggled a lot trying to merge these two ranges into a single button before giving up and just making them two separate buttons. Also, because the output div is at the bottom of my page, whenever the content of the div was replaced, it scrolled back up a bit, which didn't seem very useful, so I ended up having to set a min-height in the CSS.</p>
 			</div>
 
 			<div class="minor-section">
@@ -64,7 +64,10 @@
 						<p class="smalltxt">*Note: Some Pokemon variants may not have images.</p>
 					</div>
 					<div id="output" class="center">
-					</div>
+						<div id="vertcenter">
+							<p>Click one of the buttons above, or enter a type, to generate a random pokemon from the specified list.</p>
+						</div>
+				</div>
 			</div>
 		</section>
 	</main>

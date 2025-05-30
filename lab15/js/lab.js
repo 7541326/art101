@@ -196,6 +196,8 @@ function checkType(){
   if (typesArray.includes($("#typeInput").val().toLowerCase().replace(" ",""))) {
     // run function for random pokemon in chosen type
     randPokemon($("#typeInput").val().toLowerCase().replace(" ",""), "type");
+    $("#typeInput").attr("placeholder", "Enter a type");
+
   } else {
     // clear input and ask for valid type, do not run function
     $("#typeInput").val("");
