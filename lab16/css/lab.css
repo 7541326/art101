@@ -13,3 +13,21 @@
 /* pre {
   background-color: var(--content-bg);
 } */
+
+.center {
+  text-align: center;
+}
+
+button {
+  color: var(--a-color);
+  background-color: var(--content-bg);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+button:hover {
+  background-color: var(--linkshover-bg);
+  color: var(--a-color);
+  cursor: pointer;
+}

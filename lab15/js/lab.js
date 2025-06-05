@@ -151,26 +151,11 @@ const favArray = [
   "gengar-mega",
   "mawile-mega"
 ];
-const favTypes = ["bug","ghost"];
+const favTypes = [
+  "bug","ghost"
+];
 const typesArray = [
-  "normal",
-  "fire",
-  "fighting",
-  "water",
-  "flying",
-  "grass",
-  "poison",
-  "electric",
-  "ground",
-  "psychic",
-  "rock",
-  "ice",
-  "bug",
-  "dragon",
-  "ghost",
-  "dark",
-  "steel",
-  "fairy"
+"normal","fire","fighting","water","flying","grass","poison","electric","ground","psychic","rock","ice","bug","dragon","ghost","dark","steel","fairy"
 ]
 
 // ---------------------------------------------
@@ -236,6 +221,7 @@ function randPokemon(num, doWhat){
   })
 }
 
+
 // -----------------------------------------------
 // buttons
 $("#activate").click(function(){
@@ -260,7 +246,13 @@ $("#typeInput").keyup(function(event){
     checkType();
 }});
 
-
+$("#pokeButton").click(function(){
+  randPokemon($("#pokeInput").val().toLowerCase().replace(" ", "-"),"pokemon");
+});
+$("#pokeInput").keyup(function(event){
+  if (event.keyCode == 13) {
+    randPokemon($("#pokeInput").val().toLowerCase().replace(" ", "-"),"pokemon");
+}});
 
 // ---------------------------------------------
 // links 
